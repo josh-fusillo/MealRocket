@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Meal Rocket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <header id="topHeader"></header>
+  <!--Nav Bar Start Here-->
+<nav id="nav">
+    <h1>NAV</h1>
+    <div id="title">
+        <img src= "Capture2.png"/>  
+       </div>
+    <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT US</a></li>
+    <li><a href="makemymeal.html">MAKE MY MEAL</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    </ul> 
+    </nav><!--End Nav-->
+
+    <style>
+        .col12 {
+            width:46%;
+            margin:1%;
+            padding:1%;
+        }
+        
+        input, textarea {
+            display:block;
+            width:100%;
+            padding:10px;
+            font-family: Arial;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size:1.2em;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+<br>
+<br>
+<br>
+<section id="container">
+    <section class="col13 fl"></section>
+    <section class="col12 fl">
+	    <form action="form.php" method="post" enctype="multipart/form-data" id="contactForm">
+	        
+	        <h1 class="contact-heading"><strong>Send Us Mail</strong></h1>
+	        <br>
+		    <label></label>
+		    <input name="name" required="required" placeholder="Your Name">
+		    
+		            
+		    <label></label>
+		    <input name="email" type="email" required="required" placeholder="Your Email">
+		            
+		    
+		    <label></label>
+            <textarea name="message" cols="20" rows="5" required="required" placeholder="We’d love to hear your feedback and comments."></textarea>
+		            
+		    <input id="submit" name="submit" type="submit" value="Submit">
+	        
+	    </form>
+</section>
+
+
+<div class="clear"></div>	<!--END CONTACT-->
+</section>
+
+
+
+
+
+<!--FOOTER STARTS HERE-->
+<div>
+<footer id="contact" class="container">
+    <div class="col33">
+        <p class="copyright"><strong>&#169; 2020, Meal Rocket</strong></p>
+</footer> 
+</div>
+<!--FOOTER ENDS HERE--> 
+</body>
+</html>

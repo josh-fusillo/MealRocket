@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html {
+  height: 100%;
+} 
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight:300;
+	font-size:0.95em;
+	line-height:120%;
+	text-align:justify;
+	color:#000;
+	background-image:url(images/mainbig2.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	
+}
+
+a {
+	text-decoration:none;
+	color:#000;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mealrocket.PNG"); 
+/* This image above doesnt work however it keeps the placeholder for the dark overlay on the index page. */
+
+/* Set a specific height */
+height: 50%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+/***********************HEADER*/
+h1 {
+	font-weight:400;
+	font-size:2em;
+	margin-bottom:10px;
+
+}
+
+h2 {
+	font-size:1.5em;
+	line-height:120%;
+	margin-bottom:10px;
+}
+#home {
+	height:100vh;
+}
+#topHeader {
+	background-color: black;
+	height:100px;
+	position:fixed;
+	overflow: hidden;
+	left:0;
+	top:0;	
+	width:100%;	
+}
+
+.container {
+	width:960px;
+	margin:0 auto;
+	padding-top:10px;
+}
+
+/*---COLUMN DIMENSIONS---*/
+
+.col33 {width:920px;} /*960*/
+.col13 {width:280px;} /*320*/
+.col23 {width:600px;} /*640*/
+.col12 {width:440px;} /*480*/
+.col14 {width:200px;} /*240*/
+.col15 {width:152px;} /*192*/
+.col16 {width:120px;} /*160*/
+
+.col33, .col13, .col23, .col12, .col12, .col15, .col16 {
+	padding:10px;
+	margin:10px;
+}
+
+#title {
+	width:100px;
+	height:75px;
+	line-height:30px;
+	position: fixed;;
+	left:0px;
+	top:0px;
+	
+}
+
+#title img{
+	border-radius: 3px;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 200px;
+	height: 60px;
+}
+
+#nav {
+	height:35px;
+	line-height:35px;
+	width:15%;	
+	z-index: inherit 100%;;
+	overflow: hidden;
+	background-color: black;
+}
+
+	#nav ul {
+		padding:0 10px 10px 10px;
+		position:fixed;
+		top:10px;
+		right:-20px;
+	}
+	
+	#nav li {
+		
+		display:inline;
+		text-align:center;
+		font-size:20px;
+		font-weight: bold; 
+		font-family: 'Poppins';
+	}
+	
+	#nav li a {
+		display:inline-block;
+		margin-right:20px;
+		color:rgba(116,116,116,1.00);
+		padding: 5px 10px;
+	}
+	
+	#nav li a:hover {
+		color:#6CAD03;
+	}
+	
+	#nav h1 {
+		text-indent:-9999em;
+	}
+
+#home, #about, #input, #contact {
+	padding-top:50px;
+}
+
+#input h3 {
+	text-indent:-99999em;
+	position:absolute;
+	visibility:hidden;
+}
+
+#input img {
+	padding-top:0;
+}
+
+#contact {
+	text-align:center;
+	height:90vh;
+	padding-top:10vh;
+}
+
+	#contact p {
+		margin-bottom:5px;
+	}
+	
+	#contact a {
+		color:rgba(116,116,116,1.00);
+	}
+	
+	#contact a:hover {
+		color:#6CAD03;
+	}
+
+
+hr {
+	border: 0; 
+	height: 0; 
+	width:440px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1); 
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+	#input hr  {
+		width:920px;
+	}
+
+
+/*RESUSABLE CLASSES*/
+
+.sectiontext {
+	margin-top:200px;
+}
+
+.copyright {
+	font-size:0.8em;
+	color:rgba(182,182,182,1.00);
+}
+
+.bigphoto1 {
+	background-image:url(images/saladbig1.jpg);
+	background-position:top center;
+	background-attachment:fixed;
+	background-size:cover;
+	height:500px;
+	-webkit-box-shadow:inset 0 0 6px 0 rgba(3,3,3,0.5);
+	box-shadow:inset 0 0 6px 0 rgba(3,3,3,0.5);
+}
+
+.bigphoto2 {
+	background-image:url(images/dessertbig3.jpg);
+	background-position:top center;
+	background-attachment:fixed;
+	background-size:cover;
+	height:500px;
+	-webkit-box-shadow:inset 0 0 6px 0 rgba(3,3,3,0.5);
+	box-shadow:inset 0 0 6px 0 rgba(3,3,3,0.5);
+}
+
+/*WHITE ROW FOR ABOUT*/
+.rowWhite {
+	background:#FFF;
+}
+
+/* FLOATS AND CLEARS */
+.fl {float:left;}
+.fr {float:right;}
+.clear {clear:both;}
+
+.current {
+	background:rgba(164,162,149,0.2);
+	color:#6CAD03!important;
+	outline:none;
+}
+a.current {
+	
+}
+
+
+.input-field {
+  background-color: white;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.label-icon {
+	background-image:src="images/searchicon.png";
+}
+.brand-logo {
+  height: 65px;
+  width: 300px;
+}
+
+/**************************MAKE MY MEAL PAGE CLASSES*/
+/* #form-food {
+
+} */
+
+#submit-class {
+	background-color: #6CAD03;
+	border-radius: 5px;
+}
+#again-class {
+	background-color: #6CAD03;
+	border-radius: 5px;
+}
+#cocktail-class {
+	background-color: white;
+	border-radius: 5px;
+	
+}
+
+.posted-food {
+background-color: rgba(255, 255, 255, 0.7);
+text-align: right;
+position: inherit;
+/* display: inline-block; */
+margin: 60px 30px 20px 60px; 
+
+
+
+}
+
+#posted-food {
+	width: 50vw;
+	text-align: center;
+	
+	
+}
+
+.posted-drink {
+	text-align: center;
+	
+}
+.posted-drink-image {
+	border-radius: 3px;
+}
+
+.recipe {
+	display: flex;
+	justify-content: center;
+}
+#back-class {
+	visibility: hidden;
+	position: absolute;
+	top:75%;
+	background-color: #6CAD03;
+}
+#next-class {
+	visibility: hidden	;
+	position: absolute;
+	top:75%;
+	background-color: #6CAD03;
+}
+.preloader {
+	visibility: hidden;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #6CAD03;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
+  .rocket-round {
+	border-radius: 25px;
+	
+	
+  }
+.modal {
+	margin: 60px 30px 20px 60px; 
+}
+.waves-light {
+	color: white;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+.modal-window {
+	position: fixed;
+	background-color: rgba(200, 200, 200, 0.75);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  }
+  
+  .modal-window:target {
+	opacity: 1;
+	pointer-events: auto;
+  }
+  
+  .modal-window>div {
+	width: 350px;
+	height: 350px;
+	position: relative;
+	margin: 10% auto;
+	padding: 2rem;
+	background: #fff;
+	color: #444;
+	border-radius: 5px;
+	border-color: black;
+	border-width: 5px;
+	border-style: solid;
+  }
+  
+  .modal-window header {
+	font-weight: bold;
+  }
+  
+  .modal-close {
+	color: #aaa;
+	line-height: 50px;
+	font-size: 80%;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 70px;
+	text-decoration: none;
+  }
+  
+  .modal-close:hover {
+	color: #000;
+  }
+  .textHome {
+    font-size: 16px;
+}
+.contact-heading {
+    color:rgba(116,116,116,1.00);
+    font-weight: 100;
+    text-shadow: #FFF;
+    text-align: center;
+}
+.heading2 {
+    color:rgba(116,116,116,1.00);
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.aboutpage {
+    background-color: #FFF;
+    opacity: 0.8;
+    padding:20px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.aboutimg {
+    box-shadow: #807C99;
+}
+ 
+container {
+    width:960px;
+    margin:0 auto;
+    padding-top:10px;
+}

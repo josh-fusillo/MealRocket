@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Meal Rocket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--MATERIALIZE STYLE-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+
+  
+    <!-- Slick Carousel Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+  </head>
+
+
+<body class="body"> 
+  <header id="topHeader">
+    <!--Nav Bar Start Here-->
+    <nav id="nav">
+    <h1>NAV</h1>
+    <div id="title">
+      <img src= "Capture2.png"/>  
+     </div>
+    <ul>
+    <li><a href="index.html" class="current">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="makemymeal.html" class="current">MAKE MY MEAL</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    </ul> 
+    </nav><!--End Nav-->
+</header>
+
+<body>
+  <div class="preloader"></div>
+<!--Search Bar-->
+<!-- <div class="nav-wrapper">
+  <form>
+    <div class="input-field">
+      <input id="search" type="search" required>
+      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+      <i class="material-icons">close</i>
+    </div>
+  </form>
+</div> -->
+
+ 
+<div class="row">
+  <div class="col s12 m4 l2">&nbsp;</div>
+  <div class="col s12 m4 l8"> 
+    <div class="nav-wrapper">
+      <form name="searchform" id="form-id" method="post" type="submit" required>
+        <br><br><br><br>
+        <!-- <p class="word"><strong>Browse recipes by ingredients like chicken, beef and chocolate, and search for seasonal favorites like asparagus, pumpkin, strawberries, tomatoes and more.</strong></p> -->
+        <div class="input-field" name="inputfield" required>
+          <input id="search" name="inputname" type="search" class="submit-recipe" placeholder="   Browse recipes by ingredients like chicken or beef and seasonal favorites like asparagus or pumpkin!" required enabled>  
+          <label class="label-icon" for="search"><i class="material-icons"></i></label>
+          
+        </div>
+      
+    </div>
+
+    <button class="btn waves-effect waves-light" id="submit-class" type="submit" name="action" enabled>You Hungry? Lets Cook!<i class="material-icons right"></i>
+      </button>
+    </form>
+      <button class="btn waves-effect waves-light" id="again-class" type="submit" name="action">Search Again!<i class="material-icons right"></i>
+       </button>
+
+       <button class="btn waves-effect waves-light" id="cocktail-class" enabled><a href="#open-modal">Suggest A Random Cocktail!</a><i class="material-icons right"></i>
+
+       </button>
+  
+       <!-- Inside modal -->
+       
+       <div id="open-modal" class="modal-window">
+       <div>
+         <a href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+         <div class="posted-drink"></div>
+         <div class="posted-drink-image" id="posted-drink-image" style="width:12px; height:15px;"></div>
+       </div>
+     </div>
+
+       
+
+
+
+  </div>
+  <div class="col s12 m4 l2">&nbsp;</div>
+</div>
+
+ 
+<!--Recipe results-->
+<!-- <div id="container">     -->
+  
+       
+ 
+  <div class="row recipe">
+    <div class="col-sm   2"><input type ="button" value="back" id="back-class" class="btn-floating btn-large waves-effect waves-light slick-prev"></div>
+    <div class="col-sm   8"> <div id="posted-food" class="posted-food"></div>
+    </div>
+    <div class="col-sm   2"><input type ="button" value="next" id="next-class" class="btn-floating btn-large waves-effect waves-light slick-next"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+
+<!--FOOTER STARTS HERE-->
+<footer>
+
+</footer> 
+<!--FOOTER ENDS HERE--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M=" crossorigin="anonymous"></script>
+<script src="./cocktail.js"></script>
+<script src="./javascript.js"></script>
+</body>
+</html>

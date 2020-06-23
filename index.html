@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Meal Rocket</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>title</title>
+   <link rel="stylesheet" href="style.css" type="text/css">
+
+       
+   
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+<!--jQUERY-->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!--SMOOTH SCROLL-->
+<script src="js/css-tricks-smooth-scroll.js"></script>
+
+<!--Nav Function-->
+<script>
+  //CURRENT CLASS
+  $(document).ready(function () {
+      $(window).scroll(function () {
+  
+          var y = $(this).scrollTop();
+      
+          $('nav ul li a').each(function (event) {
+              if (y >= $($(this).attr('href')).offset().top - 90) {
+                  $('nav ul li a').not(this).removeClass('current');
+                  $(this).addClass('current');
+              }
+      
+          });
+  
+      });
+  });
+  </script>
+  </head>
+
+
+  <body class="body">
+    <header id="topHeader">
+    <!--Nav Bar Start Here-->
+    <nav id="nav">
+    <h1>NAV</h1>
+    <div id="title">
+     <img src= "Capture2.png"/>  
+    </div>
+    <ul>
+    <li><a href="index.html" class="current">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="makemymeal.html">MAKE MY MEAL</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    </ul> 
+    </nav><!--End Nav-->
+  </header>
+
+
+  <!--BLAST OFF-->
+
+ 
+        
+  <body>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to a Galaxy of Meal Options</h1>
+        <p>Click the Rocket to get started</p>
+        <a href="makemymeal.html"><img src="./images/rocket.png" class="rocket-round" alt="Blast Off"></a>
+      </div>
+    </div>
+
+   <!--HOME PAGE-->
+  <section id="home" class="container"></section> 
+  
+
+  <!--ABOUT US-->
+  <div class="rowWhite">
+    <section id="about" class="container">
+      <div class="col12 sectiontext fl">
+        <h2 class="heading2">ABOUT US</h2>
+        <p class="textHome">Meal Rocket is a recipe search by ingredients you have at home. Join and browse us here to explore variety of creative meal ideas. </p>
+        <br><button><a href="about.html">Know us more here</a></button>
+      </div>
+      <div class="col12 fl"><img src="images/meal-1.jpg" width="500" heigth="450"/>
+        <hr>
+      </div>
+      <div class="clear"></div>
+    </section>
+    </div>
+  
+
+<!--BACKGROUND PHOTO-->
+<div class="bigphoto1">&nbsp;</div>
+
+
+<!--INPUT MAKE ME A MEAL-->
+<div class="rowWhite">
+  <section id="input" class="container">
+    <div class="col33">
+      <h2 class="heading2">MAKE MY MEAL</h2>
+      <p class="textHome">Have a fridge full of food and need to make sense of it? 
+        Looking for a chicken dish? Beef? We've got you covered. 
+        Browse recipes by ingredients with Meal Rocket to make the most of what you already have at home. 
+        You can also narrow your search by main ingredient to find recipes and meal ideas fast here.
+      </p>
+      <br><button><a href="makemymeal.html">Start Here</a></button>
+    </div><!--END COL33-->
+    
+    
+    <div class="col12 fl"><img src="images/meal-2.png" width="400" height="250"/></div>
+    <!--END COL12-->
+    <div class="col12 fl"><img src="images/meal-3.png" width="400" height="250"/></div>
+    <!--END COL12-->
+    
+    <div class="clear"></div>
+  </section>
+  </div><!--END INPUT MAKE ME A MEAL-->
+  
+  
+  <!--BACKGROUND PHOTO-->
+  <div class="bigphoto2">&nbsp;</div>
+  
+
+<!--CONTACT-->
+<div class="rowWhite">
+  <footer id="contact" class="container">
+    <div class="col33">
+      <h2>CONTACT</h2>
+      <p class="contact-text">133 Youge Street, Toronto ON, M5A 3C4</p>
+      <p class="contact-text">We'd love to hear your feedbacks.</p>
+      <p class="contact-text">Direct: 416-000-0000 <br><br>  info@mealrocket.ca</p>
+    <!--END COL33--> 
+  </footer>
+  </div><!--END FOOTER-->
+
+  </body>
+</html>
