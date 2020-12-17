@@ -9,7 +9,7 @@ var to = 5
 
 function getFood(foodSearch) {
 
-    var queryURL = "https://api.edamam.com/search?q=" + foodSearch + "&app_id=e24cb921&app_key=aa1adcdf587889005dc6a6a69ec02dc7&from=" + from + "&to=" + to + "&calories=" + calorieRange;
+    var queryURL = "https://api.edamam.com/search?q=" + foodSearch + "&app_id=ad029dbc&app_key=aa1adcdf587889005dc6a6a69ec02dc7&from=" + from + "&to=" + to + "&calories=" + calorieRange;
 
     $.ajax({
         url: queryURL,
